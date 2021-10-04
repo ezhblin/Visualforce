@@ -1,0 +1,17 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:page id="ContactDetail" standardController="Contact">
+
+    <apex:composition template="FirstTemplate">
+        <apex:define name="details">
+            <apex:detail/>
+        </apex:define>
+
+        <apex:define name="accountDetails">
+            <c:AccountDetail contactId="{!Contact.Id}"/>
+        </apex:define>
+    </apex:composition>
+
+</apex:page>

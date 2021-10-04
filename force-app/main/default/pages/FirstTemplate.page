@@ -1,0 +1,17 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:page id="FirstTemplate" showHeader="false">
+    <apex:slds />
+
+    <div class="slds-grid">
+        <div class="slds-col slds-box slds-size_1-of-7">
+            <apex:insert name="accountDetails"/>
+        </div>
+
+        <div class="slds-col slds-box slds-size_6-of-7">
+            <apex:insert name="details"/>
+        </div>
+    </div>
+</apex:page>

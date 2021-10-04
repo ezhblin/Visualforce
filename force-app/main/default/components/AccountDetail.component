@@ -1,0 +1,16 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:component id="AccountDetail" controller="AccountDetailController">
+    <apex:attribute name="contactId" type="Id" description="contactId" assignTo="{!cContactId}"/>
+    <apex:form>
+        Name: <apex:outputField value="{!account.Name}"/><br/>
+        Number: <apex:outputField value="{!account.AccountNumber}"/><br/>
+        Phone: <apex:outputField value="{!account.Phone}"/><br/>
+        Billing Country: <apex:outputField value="{!account.BillingCountry}"/><br/>
+        Billing City: <apex:outputField value="{!account.BillingCity}"/><br/>
+        Billing Street: <apex:outputField value="{!account.BillingStreet}"/><br/>
+    </apex:form>
+
+</apex:component>
