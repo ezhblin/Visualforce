@@ -1,0 +1,9 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:page id="ContactsSet" standardController="Contact" recordSetVar="contacts">
+    <apex:repeat value="{!contacts}" var="contact">
+        <apex:outputField value="{!contact.Name}"/><br/>
+    </apex:repeat>
+</apex:page>

@@ -1,0 +1,12 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:page id="ContactURL_custom" controller="ContactURL_customController">
+    <apex:outputField value="{!contact.Name}"/>
+
+    <apex:form>
+        <apex:commandButton action="{!toAll}" value="Go to all"/>
+    </apex:form>
+
+</apex:page>

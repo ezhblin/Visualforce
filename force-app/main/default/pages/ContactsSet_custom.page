@@ -1,0 +1,9 @@
+<!--
+ - Created by eshemetov on 04/10/2021.
+ -->
+
+<apex:page id="ContactsSet_custom" controller="ContactsSet_customController">
+    <apex:repeat value="{!contacts}" var="contact">
+        <apex:outputField value="{!contact.Name}"/><br/>
+    </apex:repeat>
+</apex:page>
